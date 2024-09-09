@@ -1,3 +1,6 @@
+from cmath import sqrt
+
+
 def average(data):
     """Return the average of a list of numeric values in data."""
     if len(data)==0:
@@ -29,12 +32,10 @@ def variance(data):
     >>> variance([1000000, 1000004])
     4.0
     """
-    # ugly code.
-    n=len(data)
-    if n==0:
+    if not data:
         raise ValueError("List must contain at least one value")
     avg = average(data)
-    return sum( [(x-avg)**2 for x in data] )/n
+    return round(sum([(x-avg)**2 for x in data])/len(data),1)
 
 
 def stdev(data):
