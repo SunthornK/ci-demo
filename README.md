@@ -1,5 +1,8 @@
+
+
 Continuous Integration Demo
 ===========================
+![Run unit tests](https://github.com/SunthornK/ci-demo/actions/workflows/python-app.yml/badge.svg)![Style Checking](https://github.com/SunthornK/ci-demo/actions/workflows/style-checking.yml/badge.svg)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
 
